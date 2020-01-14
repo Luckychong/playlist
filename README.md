@@ -12,24 +12,24 @@ In this unit, coders will create the classic game of tic tac toe in their browse
 #### Set-Up
 - [x] Go to the repository
 - [x] Fork this repository to your github account and clone to a new workspace
-- [ ] Add, commit, and push your changes
-- [ ] Make your site live on gh-pages
+- [x] Add, commit, and push your changes
+- [x] Make your site live on gh-pages
 - [x] Submit your website using the link on the Agenda
 
 ### HTML/JavaScript
 - [x] Create a div to display your songs
 - [x] Create an array to store your song names
 - [x] Create a loop to display your song names
-- [ ] Repeat these steps for song artist, song length, image, and link
+- [x] Repeat these steps for song artist, song length, image, and link
 
 #### Wrap
-- [ ] Push your changes!
+- [x] Push your changes!
 
 ## Day 2
 
 ## JavaScript
 - [ ] Add song information to your list using .push()
-- [ ] Create a working click handler that retrieves user input, pushes new items to your song arrays, and displays the result to the screen
+- [x] Create a working click handler that retrieves user input, pushes new items to your song arrays, and displays the result to the screen
 
 #### Wrap
 - [ ] Push your changes!
