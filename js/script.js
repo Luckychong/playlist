@@ -1,19 +1,45 @@
 let songdata = {
-    songTitle: "The Truth Untold",
-    songArtist: "BTS",
-    songImage: "https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjJxsyCmqXnAhVEJTQIHeboAbAQjRx6BAgBEAQ&url=http%3A%2F%2Ft0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcSEC1ihcXegp1-DOra8NPcBToXGs_uMsh2Z5L7cxfpM_KBDHSWv&psig=AOvVaw0WBjJ4orNwgs5J-h6AVp1k&ust=1580263390421573",
-    songLength: "",
-    songLink: "https://www.youtube.com/watch?v=eRNJGMZ_zpw",
+    songTitle: "The Truth Untold", 
+    songArtist: "BTS", 
+    songImage: "https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjJxsyCmqXnAhVEJTQIHeboAbAQjRx6BAgBEAQ&url=http%3A%2F%2Ft0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcSEC1ihcXegp1-DOra8NPcBToXGs_uMsh2Z5L7cxfpM_KBDHSWv&psig=AOvVaw0WBjJ4orNwgs5J-h6AVp1k&ust=1580263390421573", 
+    songLength: "4:05",
+    songLink: "https://www.youtube.com/watch?v=eRNJGMZ_zpw", 
 
 }
-let songs = [songdata, ]
+let songdata = {
+    songTitle: "Overtime", 
+    songArtist: "Chris Brown", 
+    songImage: "https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjJxsyCmqXnAhVEJTQIHeboAbAQjRx6BAgBEAQ&url=http%3A%2F%2Ft0.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcSEC1ihcXegp1-DOra8NPcBToXGs_uMsh2Z5L7cxfpM_KBDHSWv&psig=AOvVaw0WBjJ4orNwgs5J-h6AVp1k&ust=1580263390421573", 
+    songLength: "3:56",
+    songLink: "https://www.youtube.com/watch?v=eRNJGMZ_zpw", 
+
+}
+let songs = [songdata]
 $("#add").click(function() {
+    let newsongdata = {
+    songTitle: $("#song").val(),
+    songArtist:$("#artist").val(),
+    songImage: $("image").val(),
+    songLength:$("length").val(),
+    songLink: $("link").val(),
+} 
+let songs = [songinfo]
+$("#add").click(function() {
+    let newestsongdata = {
+    songTitle: $("#song").val(),
+    songArtist:$("#artist").val(),
+    songImage: $("image").val(),
+    songLength:$("length").val(),
+    songLink: $("link").val(),
+} 
+    songs.push(newsongdata)
+    console.log(songs)
     songs.forEach (function(song){
     $("#songs").append("<p> songTitle: "+song["songTitle"]+"</p>");
-$("#songs").append("<p> songArtists: "+song["songArtist"]+"</p>");
-$("#songs").append("<p> songImage: "+song["songImage"]+"</p>");
-$("#songs").append("<p> songLength: "+song["songLength"]+"</p>");
-$("#songs").append("<p> songLink: "+song["songLink"]+"</p>");
+    $("#songs").append("<p> songArtists: "+song["songArtist"]+"</p>");
+    $("#songs").append("<p> songImage: "+song["songImage"]+"</p>");
+    $("#songs").append("<p> songLength: "+song["songLength"]+"</p>");
+    $("#songs").append("<p> songLink: "+song["songLink"]+"</p>");
     })
 })
 songs.forEach(function(songs) {
@@ -35,17 +61,11 @@ let songLength = ["BTS", "Chris Brown"]
 songLength.forEach(function(songs) {
     $("#songLength").append(`<p> The artists are "${songs}"`)
 })
-$("#add").click(function()
+/*$("#add").click(function()
 {let songName = $("#song").val();
 songs.push (songName)
 songs.forEach(function(song) {
     console.log (song)
     $("#songs").append(`<p> I want to listen to "${song}" </p>`)
 })
-}) 
-let songs
-let songArtists
-let songImage
-let songLink
-let songLength
-
+}) */
